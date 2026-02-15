@@ -1,0 +1,81 @@
+# Galaxy Profile README Configuration
+
+username: heinric
+
+profile:
+  name: "Albano Nebula"
+  tagline: "Software Engineer | Distributed Systems | Cloud Security"
+  company: "Noalab"
+  location: "Florianópolis, Brazil"
+  bio: |
+    I design scalable backend systems with Go and cloud-native architectures.
+    Focused on distributed systems, search platforms, and security-driven engineering.
+  philosophy: '"Build simple. Scale smart. Secure by design."'
+
+social:
+  email: "henrialbano@hotmail.com"
+  linkedin: "henrialbano"
+  website: "https://noalab.vercel.app/"
+
+galaxy_arms:
+  - name: "Backend"
+    color: "synapse_cyan"
+    items:
+      - "Go"
+      - "Python"
+      - "PostgreSQL"
+      - "Microservices"
+      - "Event-Driven Architecture"
+
+  - name: "Cloud"
+    color: "axon_amber"
+    items:
+      - "AWS (EKS, Lambda, S3, SQS)"
+      - "Kubernetes"
+      - "Docker"
+
+  - name: "DevOps"
+    color: "dendrite_violet"
+    items:
+      - "CI/CD"
+      - "Airflow"
+      - "Linux"
+
+  - name: "Security"
+    color: "synapse_cyan"
+    items:
+      - "API Security"
+      - "LGPD"
+      - "ISO 27001"
+
+projects:
+  - repo: "Noalab-Develop/platform"
+    arm: 0
+    description: "Scalable event-driven platform built with Go, AWS and Kubernetes."
+
+theme:
+  void: "#080c14"
+  nebula: "#0f1623"
+  star_dust: "#1a2332"
+  synapse_cyan: "#00d4ff"
+  dendrite_violet: "#a78bfa"
+  axon_amber: "#ffb020"
+  text_bright: "#f1f5f9"
+  text_dim: "#94a3b8"
+  text_faint: "#64748b"
+
+stats:
+  metrics:
+    - "commits"
+    - "stars"
+    - "prs"
+    - "issues"
+    - "repos"
+
+languages:
+  exclude:
+    - "HTML"
+    - "CSS"
+    - "Shell"
+    - "Makefile"
+  max_display: 8
