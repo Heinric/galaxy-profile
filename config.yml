@@ -49,7 +49,7 @@ galaxy_arms:
       - "ISO 27001"
 
 projects:
-  - repo: "Noalab-Develop/platform"
+  - repo: "Heinric/platform"
     arm: 0
     description: "Scalable event-driven platform built with Go, AWS and Kubernetes."
 
