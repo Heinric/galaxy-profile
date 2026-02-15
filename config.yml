@@ -30,7 +30,8 @@ galaxy_arms:
   - name: "Cloud"
     color: "axon_amber"
     items:
-      - "AWS (EKS, Lambda, S3, SQS)"
+      - "AWS"
+      - "GCP"
       - "Kubernetes"
       - "Docker"
 
