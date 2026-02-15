@@ -42,7 +42,7 @@ galaxy_arms:
       - "Linux"
 
   - name: "Security"
-    color: "synapse_cyan"
+    color: "quantum_blue"
     items:
       - "API Security"
       - "LGPD"
@@ -60,6 +60,7 @@ theme:
   synapse_cyan: "#00d4ff"
   dendrite_violet: "#a78bfa"
   axon_amber: "#ffb020"
+  quantum_blue: "#3b82f6"
   text_bright: "#f1f5f9"
   text_dim: "#94a3b8"
   text_faint: "#64748b"
