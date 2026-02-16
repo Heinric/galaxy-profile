@@ -295,70 +295,112 @@
     <line x1="394.7" y1="176.8" x2="380.1" y2="187.3" stroke="#00d4ff" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
     <text x="380.1" y="190.3" text-anchor="end" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Go</text>
     <text x="380.1" y="190.3" text-anchor="end" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.85">Go</text>
-    <circle cx="284.2" cy="166.5" r="2.5" fill="#00d4ff" opacity="0.85">
+    <circle cx="304.9" cy="171.4" r="2.5" fill="#00d4ff" opacity="0.85">
       <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="0.7s" repeatCount="indefinite"/>
     </circle>
-    <line x1="284.2" y1="166.5" x2="266.2" y2="167.9" stroke="#00d4ff" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
-    <text x="266.2" y="170.9" text-anchor="end" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Python</text>
-    <text x="266.2" y="170.9" text-anchor="end" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.85">Python</text>
-    <circle cx="257.1" cy="125.3" r="2.5" fill="#00d4ff" opacity="0.85">
+    <line x1="304.9" y1="171.4" x2="287.0" y2="173.9" stroke="#00d4ff" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
+    <text x="287.0" y="176.9" text-anchor="end" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Python</text>
+    <text x="287.0" y="176.9" text-anchor="end" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.85">Python</text>
+    <circle cx="248.2" cy="144.0" r="2.5" fill="#00d4ff" opacity="0.85">
       <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="1.4s" repeatCount="indefinite"/>
     </circle>
-    <line x1="257.1" y1="125.3" x2="239.3" y2="122.2" stroke="#00d4ff" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
-    <text x="239.3" y="125.2" text-anchor="end" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">PostgreSQL</text>
-    <text x="239.3" y="125.2" text-anchor="end" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.85">PostgreSQL</text>
-    <circle cx="414.4" cy="88.8" r="2.5" fill="#00d4ff" opacity="0.85">
+    <line x1="248.2" y1="144.0" x2="230.2" y2="142.9" stroke="#00d4ff" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
+    <text x="230.2" y="145.9" text-anchor="end" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Node.js</text>
+    <text x="230.2" y="145.9" text-anchor="end" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.85">Node.js</text>
+    <circle cx="297.8" cy="107.2" r="2.5" fill="#00d4ff" opacity="0.85">
       <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="2.0999999999999996s" repeatCount="indefinite"/>
     </circle>
-    <line x1="414.4" y1="88.8" x2="411.6" y2="71.0" stroke="#00d4ff" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
-    <text x="411.6" y="74.0" text-anchor="middle" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Microservices</text>
-    <text x="411.6" y="74.0" text-anchor="middle" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.85">Microservices</text>
+    <line x1="297.8" y1="107.2" x2="281.0" y2="100.8" stroke="#00d4ff" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
+    <text x="281.0" y="103.8" text-anchor="end" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Microservices</text>
+    <text x="281.0" y="103.8" text-anchor="end" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.85">Microservices</text>
+    <circle cx="464.1" cy="86.5" r="2.5" fill="#00d4ff" opacity="0.85">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="464.1" y1="86.5" x2="473.1" y2="70.9" stroke="#00d4ff" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
+    <text x="473.1" y="73.9" text-anchor="start" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Serverless</text>
+    <text x="473.1" y="73.9" text-anchor="start" fill="#00d4ff" font-size="9" font-family="monospace" opacity="0.85">Serverless</text>
     <circle cx="340.4" cy="147.3" r="2.5" fill="#ffb020" opacity="0.85">
       <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="0.0s" repeatCount="indefinite"/>
     </circle>
     <line x1="340.4" y1="147.3" x2="322.4" y2="145.7" stroke="#ffb020" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
     <text x="322.4" y="148.7" text-anchor="end" fill="#ffb020" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">AWS</text>
     <text x="322.4" y="148.7" text-anchor="end" fill="#ffb020" font-size="9" font-family="monospace" opacity="0.85">AWS</text>
-    <circle cx="405.1" cy="115.0" r="2.5" fill="#ffb020" opacity="0.85">
+    <circle cx="380.4" cy="119.4" r="2.5" fill="#ffb020" opacity="0.85">
       <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="0.7s" repeatCount="indefinite"/>
     </circle>
-    <line x1="405.1" y1="115.0" x2="397.1" y2="98.9" stroke="#ffb020" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
-    <text x="397.1" y="101.9" text-anchor="middle" fill="#ffb020" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Kubernetes</text>
-    <text x="397.1" y="101.9" text-anchor="middle" fill="#ffb020" font-size="9" font-family="monospace" opacity="0.85">Kubernetes</text>
-    <circle cx="611.1" cy="122.8" r="2.5" fill="#ffb020" opacity="0.85">
+    <line x1="380.4" y1="119.4" x2="366.3" y2="108.2" stroke="#ffb020" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
+    <text x="366.3" y="111.2" text-anchor="end" fill="#ffb020" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">GCP</text>
+    <text x="366.3" y="111.2" text-anchor="end" fill="#ffb020" font-size="9" font-family="monospace" opacity="0.85">GCP</text>
+    <circle cx="540.6" cy="112.5" r="2.5" fill="#ffb020" opacity="0.85">
       <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="1.4s" repeatCount="indefinite"/>
     </circle>
-    <line x1="611.1" y1="122.8" x2="628.8" y2="119.8" stroke="#ffb020" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
-    <text x="628.8" y="122.8" text-anchor="start" fill="#ffb020" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Docker</text>
-    <text x="628.8" y="122.8" text-anchor="start" fill="#ffb020" font-size="9" font-family="monospace" opacity="0.85">Docker</text>
+    <line x1="540.6" y1="112.5" x2="557.5" y2="106.3" stroke="#ffb020" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
+    <text x="557.5" y="109.3" text-anchor="start" fill="#ffb020" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Kubernetes</text>
+    <text x="557.5" y="109.3" text-anchor="start" fill="#ffb020" font-size="9" font-family="monospace" opacity="0.85">Kubernetes</text>
+    <circle cx="682.8" cy="152.3" r="2.5" fill="#ffb020" opacity="0.85">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="2.0999999999999996s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="682.8" y1="152.3" x2="700.8" y2="152.1" stroke="#ffb020" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
+    <text x="700.8" y="155.1" text-anchor="start" fill="#ffb020" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Mesh</text>
+    <text x="700.8" y="155.1" text-anchor="start" fill="#ffb020" font-size="9" font-family="monospace" opacity="0.85">Mesh</text>
     <circle cx="454.4" cy="133.4" r="2.5" fill="#a78bfa" opacity="0.85">
       <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="0.0s" repeatCount="indefinite"/>
     </circle>
     <line x1="454.4" y1="133.4" x2="468.9" y2="122.7" stroke="#a78bfa" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
     <text x="468.9" y="125.7" text-anchor="start" fill="#a78bfa" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">CI/CD</text>
     <text x="468.9" y="125.7" text-anchor="start" fill="#a78bfa" font-size="9" font-family="monospace" opacity="0.85">CI/CD</text>
-    <circle cx="588.0" cy="184.6" r="2.5" fill="#a78bfa" opacity="0.85">
+    <circle cx="561.7" cy="143.6" r="2.5" fill="#a78bfa" opacity="0.85">
       <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="0.7s" repeatCount="indefinite"/>
     </circle>
+    <line x1="561.7" y1="143.6" x2="579.6" y2="142.1" stroke="#a78bfa" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
+    <text x="579.6" y="145.1" text-anchor="start" fill="#a78bfa" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Terraform</text>
+    <text x="579.6" y="145.1" text-anchor="start" fill="#a78bfa" font-size="9" font-family="monospace" opacity="0.85">Terraform</text>
+    <circle cx="588.0" cy="184.6" r="2.5" fill="#a78bfa" opacity="0.85">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="1.4s" repeatCount="indefinite"/>
+    </circle>
     <line x1="588.0" y1="184.6" x2="605.7" y2="187.8" stroke="#a78bfa" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
-    <text x="605.7" y="190.8" text-anchor="start" fill="#a78bfa" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Airflow</text>
-    <text x="605.7" y="190.8" text-anchor="start" fill="#a78bfa" font-size="9" font-family="monospace" opacity="0.85">Airflow</text>
+    <text x="605.7" y="190.8" text-anchor="start" fill="#a78bfa" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Observability</text>
+    <text x="605.7" y="190.8" text-anchor="start" fill="#a78bfa" font-size="9" font-family="monospace" opacity="0.85">Observability</text>
+    <circle cx="435.2" cy="220.9" r="2.5" fill="#a78bfa" opacity="0.85">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="2.0999999999999996s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="435.2" y1="220.9" x2="438.0" y2="238.7" stroke="#a78bfa" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
+    <text x="438.0" y="241.7" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Workflows</text>
+    <text x="438.0" y="241.7" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="monospace" opacity="0.85">Workflows</text>
     <circle cx="507.0" cy="162.6" r="2.5" fill="#3b82f6" opacity="0.85">
       <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="0.0s" repeatCount="indefinite"/>
     </circle>
     <line x1="507.0" y1="162.6" x2="524.9" y2="164.3" stroke="#3b82f6" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
-    <text x="524.9" y="167.3" text-anchor="start" fill="#3b82f6" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">API Security</text>
-    <text x="524.9" y="167.3" text-anchor="start" fill="#3b82f6" font-size="9" font-family="monospace" opacity="0.85">API Security</text>
-    <circle cx="313.0" cy="197.1" r="2.5" fill="#3b82f6" opacity="0.85">
+    <text x="524.9" y="167.3" text-anchor="start" fill="#3b82f6" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">API</text>
+    <text x="524.9" y="167.3" text-anchor="start" fill="#3b82f6" font-size="9" font-family="monospace" opacity="0.85">API</text>
+    <circle cx="468.2" cy="190.3" r="2.5" fill="#3b82f6" opacity="0.85">
       <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="0.7s" repeatCount="indefinite"/>
     </circle>
+    <line x1="468.2" y1="190.3" x2="482.2" y2="201.7" stroke="#3b82f6" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
+    <text x="482.2" y="204.7" text-anchor="start" fill="#3b82f6" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Identity</text>
+    <text x="482.2" y="204.7" text-anchor="start" fill="#3b82f6" font-size="9" font-family="monospace" opacity="0.85">Identity</text>
+    <circle cx="313.0" cy="197.1" r="2.5" fill="#3b82f6" opacity="0.85">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="1.4s" repeatCount="indefinite"/>
+    </circle>
     <line x1="313.0" y1="197.1" x2="296.2" y2="203.5" stroke="#3b82f6" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
-    <text x="296.2" y="206.5" text-anchor="end" fill="#3b82f6" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">LGPD</text>
-    <text x="296.2" y="206.5" text-anchor="end" fill="#3b82f6" font-size="9" font-family="monospace" opacity="0.85">LGPD</text>
+    <text x="296.2" y="206.5" text-anchor="end" fill="#3b82f6" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Governance</text>
+    <text x="296.2" y="206.5" text-anchor="end" fill="#3b82f6" font-size="9" font-family="monospace" opacity="0.85">Governance</text>
+    <circle cx="175.3" cy="157.6" r="2.5" fill="#3b82f6" opacity="0.85">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" begin="2.0999999999999996s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="175.3" y1="157.6" x2="157.3" y2="157.8" stroke="#3b82f6" stroke-width="0.5" opacity="0.25" stroke-dasharray="2 2"/>
+    <text x="157.3" y="160.8" text-anchor="end" fill="#3b82f6" font-size="9" font-family="monospace" opacity="0.2" filter="url(#label-glow)">Threat</text>
+    <text x="157.3" y="160.8" text-anchor="end" fill="#3b82f6" font-size="9" font-family="monospace" opacity="0.85">Threat</text>
 
   <!-- 9. Project stars -->
-    <circle cx="464.1" cy="86.5" r="4" fill="#00d4ff" filter="url(#star-glow-0)">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" begin="0.0s" repeatCount="indefinite"/>
+    <circle cx="387.0" cy="223.1" r="4" fill="#a78bfa" filter="url(#star-glow-2)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" begin="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="387.0" cy="223.1" r="4" fill="#a78bfa" filter="url(#star-glow-2)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" begin="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="387.0" cy="223.1" r="4" fill="#a78bfa" filter="url(#star-glow-2)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" begin="1.6s" repeatCount="indefinite"/>
     </circle>
 
   <!-- 10. Orbital rings -->
