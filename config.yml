@@ -55,7 +55,8 @@ projects:
   - repo: "Heinric/platform"
     arm: 2
     description: "Scalable event-driven platform built with Go, AWS and Kubernetes."
-     - repo: "Heinric/microservices-dotnet6"
+  
+  - repo: "Heinric/microservices-dotnet6"
     arm: 2
     description: "Microservices reference implementation with .NET and Docker."
 
