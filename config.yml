@@ -107,7 +107,9 @@ theme:
 stats:
   metrics:
     - "commits"
+    - "stars"
     - "prs"
+    - "issues"
     - "repos"
 
 languages:

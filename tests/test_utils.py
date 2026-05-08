@@ -17,7 +17,7 @@ from generator.utils import (
 
 class TestFormatNumber:
     def test_zero(self):
-        assert format_number(0) == "0"
+        assert format_number(0) == "—"
 
     def test_small_number(self):
         assert format_number(42) == "42"

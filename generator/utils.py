@@ -201,7 +201,9 @@ def calculate_language_percentages(
 
 
 def format_number(n: int) -> str:
-    """Format a number for display. 1234 -> '1.2k', 1000000 -> '1.0M'."""
+    """Format a number for display. 1234 -> '1.2k', 1000000 -> '1.0M', 0 -> '—'."""
+    if n == 0:
+        return "—"
     if n >= 1_000_000:
         return f"{n / 1_000_000:.1f}M"
     if n >= 1_000:
