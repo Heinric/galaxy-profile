@@ -24,6 +24,8 @@ galaxy_arms:
       - "Go"
       - "Python"
       - "Node.js"
+      - "Rust"
+      - "TypeScript"
       - "Microservices"
       - "Serverless"
 
@@ -55,7 +57,15 @@ projects:
   - repo: "Heinric/platform"
     arm: 2
     description: "Scalable event-driven platform built with Go, AWS and Kubernetes."
-  
+
+  - repo: "Heinric/blog_os"
+    arm: 0
+    description: "Writing an OS in Rust from scratch, following the phil-opp series."
+
+  - repo: "Heinric/developer-roadmap"
+    arm: 0
+    description: "Interactive roadmaps and guides to help developers grow in their careers."
+
   - repo: "Heinric/microservices-dotnet6"
     arm: 2
     description: "Microservices reference implementation with .NET and Docker."
