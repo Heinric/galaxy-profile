@@ -87,5 +87,12 @@ def validate_config(config: dict) -> dict:
     lang_cfg = config.setdefault("languages", {})
     lang_cfg.setdefault("exclude", [])
     lang_cfg.setdefault("max_display", 8)
+    manual = lang_cfg.get("manual")
+    if manual is not None:
+        if not isinstance(manual, dict):
+            raise ConfigError("'languages.manual' must be a mapping of language to weight.")
+        for k, v in manual.items():
+            if not isinstance(v, (int, float)) or v < 0:
+                raise ConfigError(f"languages.manual.{k} must be a non-negative number.")
 
     return config

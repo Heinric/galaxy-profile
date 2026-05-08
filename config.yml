@@ -97,9 +97,7 @@ theme:
 stats:
   metrics:
     - "commits"
-    - "stars"
     - "prs"
-    - "issues"
     - "repos"
 
 languages:
@@ -109,3 +107,9 @@ languages:
     - "Shell"
     - "Makefile"
   max_display: 8
+  manual:
+    Go: 45
+    TypeScript: 25
+    Python: 15
+    Rust: 8
+    JavaScript: 7

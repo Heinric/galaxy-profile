@@ -158,18 +158,29 @@ def get_language_color(lang: str) -> str:
 
 
 def calculate_language_percentages(
-    languages: dict, exclude: list, max_display: int
+    languages: dict, exclude: list, max_display: int, manual: dict = None
 ) -> list:
-    """Calculate language percentages from byte counts.
+    """Calculate language percentages from byte counts or manual weights.
 
-    Args:
-        languages: dict mapping language name to byte count
-        exclude: list of language names to exclude
-        max_display: maximum number of languages to show
+    When `manual` is provided it is used directly (bypasses API data), allowing
+    the config to declare a representative language distribution.
 
     Returns:
         list of dicts with keys: name, bytes, percentage, color
     """
+    if manual:
+        total = sum(manual.values()) or 1
+        sorted_langs = sorted(manual.items(), key=lambda x: x[1], reverse=True)[:max_display]
+        return [
+            {
+                "name": name,
+                "bytes": weight,
+                "percentage": round((weight / total) * 100, 1),
+                "color": get_language_color(name),
+            }
+            for name, weight in sorted_langs
+        ]
+
     filtered = {k: v for k, v in languages.items() if k not in exclude}
     total = sum(filtered.values())
     if total == 0:

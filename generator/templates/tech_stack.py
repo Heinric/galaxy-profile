@@ -160,8 +160,53 @@ def _build_radar_labels_and_dots(sector_data, galaxy_arms, rcx, rcy, radius, the
     return "\n".join(parts)
 
 
-def render(languages, galaxy_arms, theme, exclude, max_display):
-    lang_data = calculate_language_percentages(languages, exclude, max_display)
+def _build_skills_section(galaxy_arms, theme, y_start, width):
+    """Render arm items as colored badge pills grouped by arm."""
+    arm_colors = resolve_arm_colors(galaxy_arms, theme)
+    pad_x = 30
+    sep_y = y_start + 12
+
+    parts = [
+        f'  <line x1="20" y1="{sep_y}" x2="{width - 20}" y2="{sep_y}" '
+        f'stroke="{theme["star_dust"]}" stroke-width="1" opacity="0.4"/>',
+        f'  <text x="{pad_x}" y="{sep_y + 20}" fill="{theme["text_faint"]}" '
+        f'font-size="11" font-family="monospace" letter-spacing="3">SKILLS</text>',
+    ]
+
+    row_y = sep_y + 42
+    for i, arm in enumerate(galaxy_arms):
+        color = arm_colors[i]
+        items = arm.get("items", [])
+
+        parts.append(
+            f'  <text x="{pad_x}" y="{row_y + 9}" fill="{color}" font-size="10" '
+            f'font-family="monospace" dominant-baseline="middle" opacity="0.75">'
+            f'{esc(arm["name"])}</text>'
+        )
+
+        pill_x = pad_x + 80
+        for item in items:
+            pill_w = len(item) * 7 + 18
+            parts.append(
+                f'  <rect x="{pill_x}" y="{row_y}" width="{pill_w}" height="20" '
+                f'rx="10" fill="{color}" fill-opacity="0.10" '
+                f'stroke="{color}" stroke-width="0.6" stroke-opacity="0.45"/>'
+            )
+            parts.append(
+                f'  <text x="{pill_x + pill_w / 2:.1f}" y="{row_y + 10}" fill="{color}" '
+                f'font-size="10" font-family="monospace" text-anchor="middle" '
+                f'dominant-baseline="middle">{esc(item)}</text>'
+            )
+            pill_x += pill_w + 8
+
+        row_y += 30
+
+    section_h = (sep_y + 42 + len(galaxy_arms) * 30 + 18) - y_start
+    return "\n".join(parts), section_h
+
+
+def render(languages, galaxy_arms, theme, exclude, max_display, manual=None):
+    lang_data = calculate_language_percentages(languages, exclude, max_display, manual=manual)
 
     left_x = 30
     start_y = 65
@@ -194,7 +239,7 @@ def render(languages, galaxy_arms, theme, exclude, max_display):
 
     lang_height = start_y + len(lang_data) * 22 + 20
     radar_height = rcy + radius + 35
-    height = max(220, lang_height, radar_height)
+    top_height = max(220, lang_height, radar_height)
 
     radar_str = "\n".join([
         _build_radar_grid(rcx, rcy, grid_rings, theme),
@@ -203,15 +248,22 @@ def render(languages, galaxy_arms, theme, exclude, max_display):
         _build_radar_labels_and_dots(sector_data, galaxy_arms, rcx, rcy, radius, theme),
     ])
 
+    skills_str, skills_h = _build_skills_section(galaxy_arms, theme, top_height, WIDTH)
+    height = top_height + skills_h
+
+    divider_bottom = top_height - 15
+
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" viewBox="0 0 {WIDTH} {height}">
   <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{height - 1}" rx="12" ry="12"
         fill="{theme['nebula']}" stroke="{theme['star_dust']}" stroke-width="1"/>
 
   <text x="30" y="38" fill="{theme['text_faint']}" font-size="11" font-family="monospace" letter-spacing="3">LANGUAGE TELEMETRY</text>
-  <line x1="425" y1="25" x2="425" y2="{height - 25}" stroke="{theme['star_dust']}" stroke-width="1" opacity="0.4"/>
+  <line x1="425" y1="25" x2="425" y2="{divider_bottom}" stroke="{theme['star_dust']}" stroke-width="1" opacity="0.4"/>
   <text x="460" y="38" fill="{theme['text_faint']}" font-size="11" font-family="monospace" letter-spacing="3">FOCUS SECTORS</text>
 
 {bars_str}
 
 {radar_str}
+
+{skills_str}
 </svg>'''
