@@ -15,6 +15,10 @@ from generator.svg_builder import SVGBuilder
 logger = logging.getLogger(__name__)
 
 DEMO_STATS = {"commits": 1847, "stars": 342, "prs": 156, "issues": 89, "repos": 42}
+DEMO_ACTIVITY = [
+    12, 18, 8, 25, 31, 14, 22, 9, 35, 28, 17, 42,
+    19, 33, 11, 27, 38, 16, 24, 45, 20, 30, 13, 36,
+]
 DEMO_LANGUAGES = {
     "Python": 450000,
     "TypeScript": 380000,
@@ -67,6 +71,7 @@ def generate(args):
         logger.info("Demo mode: using hardcoded stats and languages.")
         stats = DEMO_STATS
         languages = DEMO_LANGUAGES
+        activity = DEMO_ACTIVITY
     else:
         # Fetch GitHub data
         api = GitHubAPI(username)
@@ -85,11 +90,19 @@ def generate(args):
             logger.warning("Could not fetch languages (%s). Using defaults.", e)
             languages = {}
 
+        logger.info("Fetching contribution activity...")
+        try:
+            activity = api.fetch_contribution_weeks()
+        except Exception as e:
+            logger.warning("Could not fetch activity (%s). Skipping sparkline.", e)
+            activity = []
+
     logger.info("Stats: %s", stats)
     logger.info("Languages: %d found", len(languages))
+    logger.info("Activity weeks: %d", len(activity))
 
     # Build SVGs
-    builder = SVGBuilder(config, stats, languages)
+    builder = SVGBuilder(config, stats, languages, activity)
     output_dir = os.path.join(os.path.dirname(__file__), "..", "assets", "generated")
     os.makedirs(output_dir, exist_ok=True)
 

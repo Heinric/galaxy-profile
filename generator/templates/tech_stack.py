@@ -2,12 +2,13 @@
 
 import math
 
-from generator.utils import calculate_language_percentages, esc, svg_arc_path, resolve_arm_colors
+from generator.utils import calculate_language_percentages, esc, svg_arc_path, resolve_arm_colors, build_language_arm_color_map
 
 WIDTH = 850
 
 
-def _build_language_bars(lang_data, theme, left_x, start_y):
+def _build_language_bars(lang_data, galaxy_arms, theme, left_x, start_y):
+    arm_color_map = build_language_arm_color_map(galaxy_arms, theme)
     bar_lines = []
     bar_max_width = 200
 
@@ -15,10 +16,11 @@ def _build_language_bars(lang_data, theme, left_x, start_y):
         y = start_y + i * 22
         bar_w = max(4, (lang["percentage"] / 100) * bar_max_width)
         delay = f"{i * 0.1}s"
+        bar_color = arm_color_map.get(lang["name"], lang["color"])
 
         bar_lines.append(f'''    <g transform="translate({left_x}, {y})">
       <text x="0" y="0" fill="{theme['text_dim']}" font-size="11" font-family="sans-serif" dominant-baseline="middle">{esc(lang['name'])}</text>
-      <rect x="110" y="-6" width="{bar_w}" height="12" rx="3" fill="{lang['color']}" opacity="0.85">
+      <rect x="110" y="-6" width="{bar_w}" height="12" rx="3" fill="{bar_color}" opacity="0.85">
         <animate attributeName="width" from="0" to="{bar_w}" dur="0.8s" begin="{delay}" fill="freeze"/>
       </rect>
       <text x="320" y="0" fill="{theme['text_faint']}" font-size="10" font-family="monospace" dominant-baseline="middle">{lang['percentage']}%</text>
@@ -164,7 +166,7 @@ def render(languages, galaxy_arms, theme, exclude, max_display):
     left_x = 30
     start_y = 65
 
-    bars_str = _build_language_bars(lang_data, theme, left_x, start_y)
+    bars_str = _build_language_bars(lang_data, galaxy_arms, theme, left_x, start_y)
 
     all_arm_colors = resolve_arm_colors(galaxy_arms, theme)
 

@@ -198,6 +198,50 @@ class GitHubAPI:
             logger.warning("Search API failed for '%s': %s", query, e)
         return 0
 
+    def fetch_contribution_weeks(self, n: int = 24) -> list:
+        """Return the last n weeks of total contribution counts.
+
+        Requires a GraphQL token. Returns an empty list without one.
+        """
+        if not self.token:
+            return []
+
+        query = """
+        query($username: String!) {
+          user(login: $username) {
+            contributionsCollection {
+              contributionCalendar {
+                weeks {
+                  contributionDays {
+                    contributionCount
+                  }
+                }
+              }
+            }
+          }
+        }
+        """
+        try:
+            resp = self._request(
+                "POST",
+                self.GRAPHQL_URL,
+                json={"query": query, "variables": {"username": self.username}},
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            if "errors" in data:
+                logger.warning("GraphQL errors fetching contributions: %s", data["errors"])
+                return []
+            weeks = (
+                data["data"]["user"]["contributionsCollection"]
+                ["contributionCalendar"]["weeks"]
+            )
+            counts = [sum(d["contributionCount"] for d in w["contributionDays"]) for w in weeks]
+            return counts[-n:]
+        except Exception as e:
+            logger.warning("Could not fetch contribution weeks: %s", e)
+            return []
+
     def fetch_languages(self) -> dict:
         """Fetch language byte counts aggregated across all owned non-fork repos."""
         languages = {}

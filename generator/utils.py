@@ -7,6 +7,14 @@ from xml.sax.saxutils import escape as xml_escape
 
 HEX_COLOR_RE = re.compile(r"^#[0-9a-fA-F]{6}$")
 
+# Maps detected GitHub language names to canonical arm item names
+LANGUAGE_ARM_ALIASES = {
+    "JavaScript": "Node.js",
+    "HCL": "Terraform",
+    "Dockerfile": "CI/CD",
+    "Shell": "CI/CD",
+}
+
 # Default deep-space theme palette
 DEFAULT_THEME = {
     "void": "#080c14",
@@ -257,6 +265,25 @@ def deterministic_random(seed_str: str, count: int, min_val: float, max_val: flo
 def esc(text: str) -> str:
     """Escape text for safe embedding in SVG/XML."""
     return xml_escape(str(text), entities={'"': "&quot;", "'": "&apos;"})
+
+
+def build_language_arm_color_map(galaxy_arms: list, theme: dict) -> dict:
+    """Return a dict mapping language names to their arm color.
+
+    Matches language names directly against arm items, then falls back to
+    LANGUAGE_ARM_ALIASES for names that differ (e.g. JavaScript → Node.js).
+    """
+    arm_colors = resolve_arm_colors(galaxy_arms, theme)
+    color_map: dict = {}
+
+    for i, arm in enumerate(galaxy_arms):
+        for item in arm.get("items", []):
+            color_map[item] = arm_colors[i]
+            for lang, alias in LANGUAGE_ARM_ALIASES.items():
+                if alias == item:
+                    color_map[lang] = arm_colors[i]
+
+    return color_map
 
 
 def svg_arc_path(cx, cy, r, start_deg, end_deg):

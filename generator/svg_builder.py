@@ -10,10 +10,11 @@ class SVGBuilder:
     which resolves theme defaults and applies missing optional fields.
     """
 
-    def __init__(self, config: dict, stats: dict, languages: dict):
+    def __init__(self, config: dict, stats: dict, languages: dict, activity: list = None):
         self.config = config
         self.stats = stats
         self.languages = languages
+        self.activity = activity or []
         self.theme = config["theme"]
         self.galaxy_arms = config.get("galaxy_arms", [])
         self.projects = config.get("projects", [])
@@ -32,6 +33,7 @@ class SVGBuilder:
             stats=self.stats,
             metrics=metrics,
             theme=self.theme,
+            activity=self.activity,
         )
 
     def render_tech_stack(self) -> str:
