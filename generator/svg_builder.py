@@ -1,6 +1,6 @@
 """SVG Builder — orchestrator connecting config, stats, and templates."""
 
-from generator.templates import galaxy_header, stats_card, tech_stack, projects_constellation
+from generator.templates import galaxy_header, stats_card, tech_stack, projects_constellation, about_card
 
 
 class SVGBuilder:
@@ -45,6 +45,14 @@ class SVGBuilder:
             exclude=lang_config.get("exclude", []),
             max_display=lang_config.get("max_display", 8),
             manual=lang_config.get("manual"),
+        )
+
+    def render_about_card(self) -> str:
+        return about_card.render(
+            profile=self.config.get("profile", {}),
+            about=self.config.get("about", {}),
+            theme=self.theme,
+            galaxy_arms=self.galaxy_arms,
         )
 
     def render_projects_constellation(self) -> str:

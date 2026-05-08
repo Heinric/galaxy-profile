@@ -82,6 +82,16 @@ projects:
     arm: 2
     description: "Custom SVG engine for dynamic GitHub profile visualization."
 
+about:
+  focus_areas:
+    - "Distributed Systems"
+    - "Search Platforms"
+    - "Event-Driven Architecture"
+    - "Security-First Engineering"
+  tech_highlights:
+    - "AWS EKS · Lambda · SQS · S3 · EC2"
+    - "Kubernetes · Airflow · Elasticsearch · OpenSearch"
+
 theme:
   void: "#080c14"
   nebula: "#0f1623"

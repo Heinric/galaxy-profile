@@ -19,24 +19,14 @@
 <br/>
 
 <div align="center">
-  <img src="./assets/generated/projects-constellation.svg" width="850" alt="Project Constellation"/>
+  <img src="./assets/generated/about-card.svg" width="850" alt="Engineering Focus"/>
 </div>
 
 <br/>
 
-<details>
-<summary><strong>More about me</strong></summary>
-
-<br/>
-
-I design scalable backend systems using Go and cloud-native architectures.  
-Focused on distributed systems, search platforms, event-driven architectures, and security-first engineering.
-
-Experienced with AWS (EKS, Lambda, SQS, S3, EC2), Kubernetes, Airflow pipelines, CI/CD automation, and Elasticsearch/OpenSearch.
-
-**Currently at** Noalab — Florianópolis, Brazil
-
-</details>
+<div align="center">
+  <img src="./assets/generated/projects-constellation.svg" width="850" alt="Project Constellation"/>
+</div>
 
 <br/>
 
