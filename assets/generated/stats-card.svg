@@ -83,27 +83,27 @@
   <line x1="20" y1="162" x2="830" y2="162" stroke="#1a2332" stroke-width="1" opacity="0.5"/>
   <text x="20" y="184" fill="#64748b" font-size="9" font-family="monospace" letter-spacing="2" dominant-baseline="middle">ACTIVITY</text>
   <rect x="85.0" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.15"/>
-  <rect x="116.1" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.15"/>
-  <rect x="147.2" y="197.1" width="29.1" height="7.9" rx="1" fill="#00d4ff" opacity="0.42"/>
-  <rect x="178.4" y="200.6" width="29.1" height="4.4" rx="1" fill="#00d4ff" opacity="0.30"/>
-  <rect x="209.5" y="201.9" width="29.1" height="3.1" rx="1" fill="#00d4ff" opacity="0.26"/>
-  <rect x="240.6" y="183.0" width="29.1" height="22.0" rx="1" fill="#00d4ff" opacity="0.90"/>
-  <rect x="271.8" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.17"/>
-  <rect x="302.9" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.15"/>
-  <rect x="334.0" y="200.0" width="29.1" height="5.0" rx="1" fill="#00d4ff" opacity="0.32"/>
-  <rect x="365.1" y="202.9" width="29.1" height="2.1" rx="1" fill="#00d4ff" opacity="0.22"/>
-  <rect x="396.2" y="201.9" width="29.1" height="3.1" rx="1" fill="#00d4ff" opacity="0.26"/>
-  <rect x="427.4" y="201.1" width="29.1" height="3.9" rx="1" fill="#00d4ff" opacity="0.28"/>
-  <rect x="458.5" y="199.8" width="29.1" height="5.2" rx="1" fill="#00d4ff" opacity="0.33"/>
-  <rect x="489.6" y="198.1" width="29.1" height="6.9" rx="1" fill="#00d4ff" opacity="0.39"/>
-  <rect x="520.8" y="201.9" width="29.1" height="3.1" rx="1" fill="#00d4ff" opacity="0.26"/>
-  <rect x="551.9" y="197.9" width="29.1" height="7.1" rx="1" fill="#00d4ff" opacity="0.39"/>
-  <rect x="583.0" y="198.6" width="29.1" height="6.4" rx="1" fill="#00d4ff" opacity="0.37"/>
-  <rect x="614.1" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.19"/>
-  <rect x="645.2" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.18"/>
-  <rect x="676.4" y="202.9" width="29.1" height="2.1" rx="1" fill="#00d4ff" opacity="0.22"/>
-  <rect x="707.5" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.22"/>
-  <rect x="738.6" y="201.3" width="29.1" height="3.7" rx="1" fill="#00d4ff" opacity="0.28"/>
+  <rect x="116.1" y="197.1" width="29.1" height="7.9" rx="1" fill="#00d4ff" opacity="0.42"/>
+  <rect x="147.2" y="200.6" width="29.1" height="4.4" rx="1" fill="#00d4ff" opacity="0.30"/>
+  <rect x="178.4" y="201.9" width="29.1" height="3.1" rx="1" fill="#00d4ff" opacity="0.26"/>
+  <rect x="209.5" y="183.0" width="29.1" height="22.0" rx="1" fill="#00d4ff" opacity="0.90"/>
+  <rect x="240.6" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.17"/>
+  <rect x="271.8" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.15"/>
+  <rect x="302.9" y="200.0" width="29.1" height="5.0" rx="1" fill="#00d4ff" opacity="0.32"/>
+  <rect x="334.0" y="202.9" width="29.1" height="2.1" rx="1" fill="#00d4ff" opacity="0.22"/>
+  <rect x="365.1" y="201.9" width="29.1" height="3.1" rx="1" fill="#00d4ff" opacity="0.26"/>
+  <rect x="396.2" y="201.1" width="29.1" height="3.9" rx="1" fill="#00d4ff" opacity="0.28"/>
+  <rect x="427.4" y="199.8" width="29.1" height="5.2" rx="1" fill="#00d4ff" opacity="0.33"/>
+  <rect x="458.5" y="198.1" width="29.1" height="6.9" rx="1" fill="#00d4ff" opacity="0.39"/>
+  <rect x="489.6" y="201.9" width="29.1" height="3.1" rx="1" fill="#00d4ff" opacity="0.26"/>
+  <rect x="520.8" y="197.9" width="29.1" height="7.1" rx="1" fill="#00d4ff" opacity="0.39"/>
+  <rect x="551.9" y="198.6" width="29.1" height="6.4" rx="1" fill="#00d4ff" opacity="0.37"/>
+  <rect x="583.0" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.19"/>
+  <rect x="614.1" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.18"/>
+  <rect x="645.2" y="202.9" width="29.1" height="2.1" rx="1" fill="#00d4ff" opacity="0.22"/>
+  <rect x="676.4" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.22"/>
+  <rect x="707.5" y="201.3" width="29.1" height="3.7" rx="1" fill="#00d4ff" opacity="0.28"/>
+  <rect x="738.6" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.15"/>
   <rect x="769.8" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.15"/>
   <rect x="800.9" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.15"/>
 </svg>
