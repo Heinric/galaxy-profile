@@ -83,7 +83,7 @@
   <line x1="20" y1="162" x2="830" y2="162" stroke="#1a2332" stroke-width="1" opacity="0.5"/>
   <text x="20" y="184" fill="#64748b" font-size="9" font-family="monospace" letter-spacing="2" dominant-baseline="middle">ACTIVITY</text>
   <rect x="85.0" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.15"/>
-  <rect x="116.1" y="189.5" width="29.1" height="15.5" rx="1" fill="#00d4ff" opacity="0.68"/>
+  <rect x="116.1" y="190.1" width="29.1" height="14.9" rx="1" fill="#00d4ff" opacity="0.66"/>
   <rect x="147.2" y="198.5" width="29.1" height="6.5" rx="1" fill="#00d4ff" opacity="0.37"/>
   <rect x="178.4" y="195.5" width="29.1" height="9.5" rx="1" fill="#00d4ff" opacity="0.47"/>
   <rect x="209.5" y="193.1" width="29.1" height="11.9" rx="1" fill="#00d4ff" opacity="0.56"/>
