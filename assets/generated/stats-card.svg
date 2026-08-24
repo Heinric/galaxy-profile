@@ -34,8 +34,8 @@
           <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 2.5a4.5 4.5 0 0 1 4.473 4H14.5a.5.5 0 0 1 0 1h-2.027A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-4.473-4H1.5a.5.5 0 0 1 0-1h2.027A4.5 4.5 0 0 1 8 3.5zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
         </svg>
       </g>
-      <text x="85.0" y="100" text-anchor="middle" fill="#00d4ff" font-size="26" font-weight="bold" font-family="sans-serif" opacity="0.35" filter="url(#num-glow)">947</text>
-      <text x="85.0" y="100" text-anchor="middle" fill="#f1f5f9" font-size="26" font-weight="bold" font-family="sans-serif">947</text>
+      <text x="85.0" y="100" text-anchor="middle" fill="#00d4ff" font-size="26" font-weight="bold" font-family="sans-serif" opacity="0.35" filter="url(#num-glow)">930</text>
+      <text x="85.0" y="100" text-anchor="middle" fill="#f1f5f9" font-size="26" font-weight="bold" font-family="sans-serif">930</text>
       <text x="85.0" y="118" text-anchor="middle" fill="#64748b" font-size="11" font-family="monospace" letter-spacing="1">Commits</text>
     </g>
     <g class="metric-cell">
@@ -105,5 +105,5 @@
   <rect x="707.5" y="201.4" width="29.1" height="3.6" rx="1" fill="#00d4ff" opacity="0.27"/>
   <rect x="738.6" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.15"/>
   <rect x="769.8" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.21"/>
-  <rect x="800.9" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.15"/>
+  <rect x="800.9" y="203.0" width="29.1" height="2.0" rx="1" fill="#00d4ff" opacity="0.19"/>
 </svg>
